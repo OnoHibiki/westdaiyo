@@ -1,0 +1,52 @@
+body{
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6; /*行間の調整。この行はbodyなので全体に適用*/
+    color:#333;
+    background-color: #fefefe;
+}
+
+.container{
+    width: 90%;
+    max-width: 1200px; /*要素の幅がこの値を超えることを上回る。入れ物の大きさの指定。*/
+    margin : 0 auto ;
+}
+
+header{
+    background-color: #fff;
+    color:#333;
+    padding: 20px 0 ;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);/* ヘッダーの下に軽い影を追加。 */
+}
+
+header h1{
+    text-align: center;
+    margin : 0 ;
+    font-size: 2rem;/*remはrootのフォントサイズを1とする。
+                    root = htmlなので、html要素のフォントサイズが1remになる
+                    相対的な単位。*/
+
+}
+
+.nav-menu{
+    display: flex; /*li要素を横並びにする。*/
+    justify-content:space-around;/*小要素（この場合li)の感覚を、両端部分も合わせていい感じに調節する*/
+    list-style: none;
+    padding: 0;
+    margin-top: 30px;
+}
+
+.nav-menu a {
+    color : #007bff;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: bold;
+    display: inline-block;/*後述のhover要素を使用するために必要*/
+    transition: transform 0.2s ease, color 0.2s ease ;/*アニメーションをなめらかに*/
+}
+
+.nav-menu a:hover{
+    transform: scale(1.2);/*hover時に1.2倍拡大*/
+    color: #0056b3; /*ホバー時に濃い青に */
+}

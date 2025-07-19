@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="portfolio.css">
+    <title>VBA講座</title>
+</head>
+
+<body>
+
+<!--Header-->
+
+    <header>
+        <div class = "container">
+            <a class ="TOP" href="../index.html"><h1>VBA講座</h1></a>
+
+            <nav>
+                <ul class="nav-menu">
+                    <li><a href="https://github.com/OnoHibiki/Inventory-Management-VBA/archive/refs/heads/main.zip">VBA-在庫管理アプリ（クリックでZIPダウンロード）</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <p>=LEFT(A1, FIND("♦", SUBSTITUTE(LEFT(A1,71), ",", "♦", LEN(LEFT(A1,71)) - LEN(SUBSTITUTE(LEFT(A1,71), ",", "")))))</p>
+        <p>=RIGHT(A1, LEN(A1) - LEN(B1))</p>
+
+                <pre><code>
+    ' ================================================
+    ' OutrecPartWithSlash関数（完全版）
+    '
+    ' 指定された OUTREC 文字列（位置,バイト,...）を
+    ' 71バイト以内・ペア単位で分割し、
+    ' 指定された part 番目の部分文字列を返す関数
+    ' ※ 各行の末尾にはカンマの後にスラッシュ "/" を追加（JCL継続形式）
+    '
+    ' 使用例：
+    ' A1セルに "1,5,10,3,20,2,30,4,40,2,50,3" とあれば、
+    ' =OutrecPartWithSlash(A1, 1) → "1,5,10,3,20,2,30,4,40,2,/"
+    ' =OutrecPartWithSlash(A1, 2) → "50,3,/"
+    ' ================================================
+    Function OutrecPartWithSlash(src As String, Optional part As Long = 1) As String
+        Dim items() As String             ' カンマで分割した文字列（位置・バイト）
+        Dim i As Long                     ' ループインデックス
+        Dim line As String                ' 出力用の文字列
+        Dim currentLength As Long        ' 現在構築中のバイト数
+        Dim count As Long                ' 現在のブロック番号（0から開始）
+
+        ' 入力末尾に余計なカンマがあれば削除する
+        If Right(src, 1) = "," Then src = Left(src, Len(src) - 1)
+
+        ' 位置・バイトをカンマで分割して配列化
+        items = Split(src, ",")
+
+        ' 初期化
+        count = 0
+        line = ""
+        currentLength = 0
+
+        ' 2つずつ取り出して、位置・バイトのペアを処理
+        For i = 0 To UBound(items) Step 2
+            If i + 1 > UBound(items) Then Exit For  ' ペアが成立しない場合は終了
+
+            ' ペアを構築（例："10,3,"）
+            Dim pair As String
+            pair = items(i) & "," & items(i + 1) & ","
+
+            ' 追加すると71バイトを超えるかチェック
+            If currentLength + Len(pair) > 71 Then
+                count = count + 1        ' 新しいブロックに切り替え
+                currentLength = 0        ' バイト長をリセット
+
+                ' 目的の part を過ぎていたら以降は無視
+                If count >= part Then
+                    line = ""
+                End If
+            End If
+
+            ' このペアが対象ブロックなら追加
+            If count = part - 1 Then
+                line = line & pair
+                currentLength = currentLength + Len(pair)
+            End If
+        Next i
+
+        ' 出力文字列の末尾にスラッシュ "/" を付けて返却（JCL継続形式）
+        If Len(line) > 0 Then
+            OutrecPartWithSlash = line & "/"  ' カンマは残したまま
+        Else
+            OutrecPartWithSlash = ""
+        End If
+    End Function
+
+
+
+    ----------------
+
+    fileContents = Replace(fileContents, vbCrLf, vbLf) ' CRLFをまずLFに変換（2バイト→1バイト）
+    fileContents = Replace(fileContents, vbCr, vbLf)   ' 単独CRもLFに変換
+    fileContents = Replace(fileContents, vbLf, vbCrLf) ' 最後にすべてのLFをCRLFに統一
+
+
+</code></pre>
+
+    </header>
+
+</body>
+
+</html>
+
