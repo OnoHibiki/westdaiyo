@@ -1,6 +1,8 @@
 import React from "react";
 import Header from "./Header";
 import Footer from "./Footer";
+import styles from "./Layout.module.css";
+
 
 type LayoutProps = {
     children: React.ReactNode;
@@ -8,9 +10,9 @@ type LayoutProps = {
 
 const Layout: React.FC<LayoutProps> = ({ children }) => {
     return(
-        <div>
+        <div className={styles.container}>
             <Header />
-            <main style={{ padding: '2rem'}}>{children}</main>
+            <main className={styles.main}>{children}</main>
             <Footer />
         </div>
     );
