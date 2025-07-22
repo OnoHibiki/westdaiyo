@@ -1,9 +1,11 @@
 import React from "react";
 import styles from "./About.module.css";
+import profileImg from "../assets/スカイダイビング.png"
 
 const About:React.FC = () => {
     return(
         <div className={styles.container}>
+            <img src={profileImg} alt="プロフィール画像" className={styles.image} />
             <h2 className={styles.heading}>こんにちは！尾野響と申します！</h2>
             <p className={styles.paragraph}>
                 バックエンド・フロントエンドどちらも挑戦中で、特にNext.jsやGraphQLなど、モダンな技術の習得を目指しております。
