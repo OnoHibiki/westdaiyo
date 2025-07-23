@@ -6,7 +6,15 @@
     border: 1px solid #ddd;
     border-radius: 8px;
     box-shadow: 0 2px 6px rgba(0, 0, 0, 1);
+    
+    /*↓プロフ画像と自己紹介文を横並びにする部分*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;/*画面が狭い時は折り返す*/
 }
+
 
 .image{
     width: 300px;
