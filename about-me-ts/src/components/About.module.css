@@ -17,7 +17,7 @@
 .image{
     width: 300px;
     height: 300px;
-    border-radius: 16%;
+    border-radius: 5%;
     object-fit: cover;
     box-shadow: 10px 5px 20px rgba(0, 0, 0, 0.5);
     

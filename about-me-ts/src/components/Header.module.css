@@ -3,8 +3,9 @@
     font-family: 'Segoe UI', Tahoma , 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     line-height: 1;
     background-color: #fefefe;
-    border: 2px solid #ddd;
+    border: 2px solid #470404;
     border-radius: 2px;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 1);
 }
 
 .title{
