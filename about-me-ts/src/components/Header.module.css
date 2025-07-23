@@ -1,6 +1,10 @@
 .top{
-    background-color:aliceblue;
-    border: 1px solid black;
+    padding:1rem ;
+    font-family: 'Segoe UI', Tahoma , 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1;
+    background-color: #fefefe;
+    border: 2px solid #ddd;
+    border-radius: 2px;
 }
 
 .title{

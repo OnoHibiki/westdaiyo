@@ -1,11 +1,9 @@
 .container{
-    padding:2rem ;
+    padding:1rem ;
     font-family: 'Segoe UI', Tahoma , 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    line-height: 1.6;
+    line-height: 1;
     background-color: #fefefe;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 1);
+    border-radius: 2px;
     
     /*↓プロフ画像と自己紹介文を横並びにする部分*/
     display: flex;
@@ -21,8 +19,12 @@
     height: 300px;
     border-radius: 16%;
     object-fit: cover;
-    margin-bottom:1rem;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    box-shadow: 10px 5px 20px rgba(0, 0, 0, 0.5);
+    
+}
+
+.textArea{
+    max-width: 500px;
 }
 
 .heading{
@@ -35,4 +37,6 @@
     font-size: 1.1rem;
     margin-bottom: 0.8rem;
     color: #444;
+    letter-spacing: 0.06em;
+    line-height: 1.8; /* ← 行間調整 */
 }
