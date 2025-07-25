@@ -9,8 +9,8 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 7rem;
-    flex-wrap: wrap;/*画面が狭い時は折り返す*/
+    gap: 6rem;
+    /* flex-wrap: wrap;画面が狭い時は折り返す */
 }
 
 
@@ -28,16 +28,19 @@
     max-width: 600px;
     background-color:whitesmoke;
     border-radius: 5%;
+    box-shadow: 10px 5px 20px rgba(0, 0, 0, 0.5);
+    
 }
 
 .heading{
     color:#333;
     font-size: 1.8rem;
     margin-bottom: 1rem;
+    padding: 0;
 }
 
 .paragraph{
-    font-size: 1.1rem;
+    font-size: 1.2rem;
     margin-bottom: 0.8rem;
     color: #444;
     letter-spacing: 0.06em;
