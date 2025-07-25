@@ -1,5 +1,5 @@
 .container{
-    width: 80%;
+    width: 65%;
     /* コンテンツ自体の幅はmax-widthで決める */
     max-width: 1100px;
     margin:0 auto ;

@@ -9,14 +9,14 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 6rem;
+    gap: 10rem;
     /* flex-wrap: wrap;画面が狭い時は折り返す */
 }
 
 
 .image{
-    width: 350px;
-    height: 300px;
+    width: 250px;
+    height: 250px;
     border-radius: 5%;
     object-fit: cover;
     box-shadow: 10px 5px 20px rgba(0, 0, 0, 0.5);
@@ -25,7 +25,7 @@
 }
 
 .textArea{
-    max-width: 600px;
+    max-width: 400px;
     background-color:whitesmoke;
     border-radius: 5%;
     box-shadow: 10px 5px 20px rgba(0, 0, 0, 0.5);
@@ -34,13 +34,13 @@
 
 .heading{
     color:#333;
-    font-size: 1.8rem;
+    font-size: 1.3rem;
     margin-bottom: 1rem;
     padding: 0;
 }
 
 .paragraph{
-    font-size: 1.2rem;
+    font-size: 0.9rem;
     margin-bottom: 0.8rem;
     color: #444;
     letter-spacing: 0.06em;
