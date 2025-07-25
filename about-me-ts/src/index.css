@@ -25,9 +25,7 @@ a:hover {
 body {
   margin: 0;
   padding: 0;
-  display: flex;
-  justify-content: center;
-  place-items: center;
+  /* display: flex;  こいつが原因で幅が広がらなかった*/
   background-color: #f5f5f5;
 }
 
