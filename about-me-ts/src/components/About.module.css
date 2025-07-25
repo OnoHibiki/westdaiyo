@@ -1,5 +1,5 @@
 .container{
-    padding:1rem ;
+    padding:1rem 3rem ;
     font-family: 'Segoe UI', Tahoma , 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     line-height: 1;
     background-color: #fefefe;
@@ -9,22 +9,25 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 2rem;
+    gap: 7rem;
     flex-wrap: wrap;/*画面が狭い時は折り返す*/
 }
 
 
 .image{
-    width: 300px;
+    width: 350px;
     height: 300px;
     border-radius: 5%;
     object-fit: cover;
     box-shadow: 10px 5px 20px rgba(0, 0, 0, 0.5);
+
     
 }
 
 .textArea{
-    max-width: 500px;
+    max-width: 600px;
+    background-color:whitesmoke;
+    border-radius: 5%;
 }
 
 .heading{
