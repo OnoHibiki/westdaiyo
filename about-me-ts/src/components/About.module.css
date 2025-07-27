@@ -15,8 +15,8 @@
 
 
 .image{
-    width: 350px;
-    height: 250px;
+    width: 300px;
+    height: 270px;
     border-radius: 5%;
     object-fit: cover;
     box-shadow: 10px 5px 20px rgba(0, 0, 0, 0.5);
@@ -26,7 +26,9 @@
 
 .textArea{
     max-width: 500px;
+    width: 400px;
     background-color:whitesmoke;
+    padding: 0.8rem;
     border-radius: 5%;
     box-shadow: 10px 5px 20px rgba(0, 0, 0, 0.5);
     
