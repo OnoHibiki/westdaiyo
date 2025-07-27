@@ -4,10 +4,6 @@ import appImage from "../assets/work.png";
 
 const WorkCard: React.FC = () => {
   return (
-    <div className={styles.workCard}>
-
-        <h2 className={styles.workHeading}>Works</h2>
-        
         <div className={styles.card}>
             <img src={appImage} alt="作品サムネイル" className={styles.image} />
             <div className={styles.content}>
@@ -19,8 +15,6 @@ const WorkCard: React.FC = () => {
                 <a href="#" className={styles.link}>GitHubを見る</a>
             </div>
         </div>
-
-    </div>
   );
 };
 

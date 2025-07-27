@@ -48,3 +48,13 @@
     letter-spacing: 0.06em;
     line-height: 1.8; /* ← 行間調整 */
 }
+
+
+/* WorkSection */
+
+.workHeading{
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin-bottom: 3rem;
+    text-align: center;
+}

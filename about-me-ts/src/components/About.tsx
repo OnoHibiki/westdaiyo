@@ -40,9 +40,14 @@ const About:React.FC = () => {
                 
             </div>
 
-            <WorkCard />
-
-
+            <div className={styles.workSection}>
+                <h2 className={styles.workHeading}>Works</h2>
+                <WorkCard />
+                <WorkCard />
+                <WorkCard />
+                <WorkCard />
+            </div>
+            
         </div>
         
     );
