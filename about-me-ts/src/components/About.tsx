@@ -5,6 +5,7 @@ import profile2 from "../assets/profile2.jpg";
 import profile3 from "../assets/profile3.png";
 
 import WorkCard from "./WorkCard";
+import appImage from "../assets/work.png";
 
 const About:React.FC = () => {
     //複数の画像を配列で管理。ランダム表示
@@ -43,10 +44,29 @@ const About:React.FC = () => {
             <div className={styles.workSection}>
                 <h2 className={styles.workHeading}>Works</h2>
                 <div className={styles.cardContainer}>
-                    <WorkCard />
-                    <WorkCard />
-                    <WorkCard />
-                    <WorkCard />
+                    <WorkCard
+                        title="ToDo管理アプリ"
+                        appImage={appImage}
+                        description="ここに作品の説明が入ります。作品の特徴や技術スタックについて簡潔に記述します。"
+                        appLink="#"
+                        gitLink="#"
+                    />
+                    <WorkCard
+                        title="Coming soon..."
+                        appImage={appImage}
+                        description="Coming soon..."
+                        appLink="#"
+                        gitLink="#"
+                        disabled={true} // リンクを無効化
+                    />
+                    <WorkCard
+                        title="Coming soon..."
+                        appImage={appImage}
+                        description="Coming soon..."
+                        appLink=""
+                        gitLink=""
+                        disabled={true} // リンクを無効化
+                    />
                 </div>
             </div>
             
