@@ -47,7 +47,12 @@ const About:React.FC = () => {
                     <WorkCard
                         title="ToDo管理アプリ"
                         appImage={appImage}
-                        description="ここに作品の説明が入ります。作品の特徴や技術スタックについて簡潔に記述します。"
+                        description={
+                            <>
+                                Next.jsとTypeScriptを使用した<br />
+                                ToDo管理アプリを作成予定です。
+                            </>
+                        }
                         appLink="#"
                         gitLink="#"
                     />

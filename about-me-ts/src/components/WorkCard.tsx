@@ -4,7 +4,7 @@ import styles from "./WorkCard.module.css";
 type WorkCardProps = {
   title: string;   
   appImage: string;
-  description: string;
+  description: React.ReactNode;
   appLink: string;
   gitLink: string;
   disabled?: boolean;
@@ -20,18 +20,19 @@ const WorkCard: React.FC<WorkCardProps> = ({ title, appImage, description, appLi
                  className={styles.appLink}
                  onClick={disabled ? (e) => e.preventDefault() : undefined}
                  >
-                    アプリはこちら！
+                    アプリはこちら
                 </a>
-                <p className={styles.description}>
-                    {description}
-                </p>
                 <br />
                 <a href={disabled ? undefined : gitLink} 
                  className={styles.gitLink}
                  onClick={disabled ? (e) => e.preventDefault() : undefined}
                  >
-                    GitHubを見る
+                    GitHubはこちら
                 </a>
+                <p className={styles.description}>
+                    {description}
+                </p>
+
             </div>
         </div>
   );
