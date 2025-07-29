@@ -42,10 +42,12 @@ const About:React.FC = () => {
 
             <div className={styles.workSection}>
                 <h2 className={styles.workHeading}>Works</h2>
-                <WorkCard />
-                <WorkCard />
-                <WorkCard />
-                <WorkCard />
+                <div className={styles.cardContainer}>
+                    <WorkCard />
+                    <WorkCard />
+                    <WorkCard />
+                    <WorkCard />
+                </div>
             </div>
             
         </div>
