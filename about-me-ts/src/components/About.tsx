@@ -45,21 +45,28 @@ const About:React.FC = () => {
                 <h2 className={styles.workHeading}>Works</h2>
                 <div className={styles.cardContainer}>
                     <WorkCard
-                        title="ToDo管理アプリ"
+                        title="簡易航空券検索UI"
                         appImage={appImage}
                         description={
                             <>
-                                Next.jsとTypeScriptを使用した<br />
-                                ToDo管理アプリを作成予定です。
+                                Next.jsとTypeScriptを使用した
+                                簡易旅行券検索UIです。
+                                CSS modulesも使ってみたりしています。
+                                デプロイは Vercelです。
                             </>
                         }
-                        appLink="#"
-                        gitLink="#"
+                        appLink="https://flights-ui-six.vercel.app/"
+                        gitLink="https://github.com/OnoHibiki/flights-ui/tree/main"
                     />
                     <WorkCard
-                        title="Coming soon..."
+                        title="Todoアプリ"
                         appImage={appImage}
-                        description="Coming soon..."
+                        description={
+                            <>
+                                定番です、、、作成中、、、
+
+                            </>
+                        }
                         appLink="#"
                         gitLink="#"
                         disabled={true} // リンクを無効化
