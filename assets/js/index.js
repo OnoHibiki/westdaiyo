@@ -7,6 +7,6 @@ window.onload = function() {
     
     const profileImg = document.querySelector('.profile-img');
     if (profileImg) {
-        profileImg.src = `assets/images/profile/${num}.jpg`;
+        profileImg.src = `/assets/images/profile/${num}.jpg`;
     }
 };
