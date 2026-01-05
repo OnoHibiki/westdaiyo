@@ -39,11 +39,18 @@ body {
 .nav-links li {
     margin-left: 20px;
 }
+
 .nav-links a {
     text-decoration: none;
     color: #333;
-    font-weight: 600;
+    font-weight: 100;
+    color: #555;
+    transition: all 0.3s ease;
 }
+.nav-links a:hover {
+    color: #007bff;
+}
+
 
 /* プロフィール部分 */
 .main-content {
