@@ -23,7 +23,16 @@ body {
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
     /* background-color: red; */
 }
-
+.navbar a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 100;
+    color: #555;
+    transition: all 0.3s ease;
+}
+.navbar a:hover {
+    color: #007bff;
+}
 .nav-container {
     display: flex;
     justify-content: space-between;
@@ -32,6 +41,8 @@ body {
 .nav-logo{
     text-decoration: none;
     font-size: 2rem;
+    text-shadow: 1px 1px 20px rgb(233, 196, 196);
+    color: white;
 }
 .nav-links {
     display: flex;
@@ -40,16 +51,6 @@ body {
 }
 .nav-links li {
     margin: 0 40px;
-}
-.nav-links a {
-    text-decoration: none;
-    color: #333;
-    font-weight: 100;
-    color: #555;
-    transition: all 0.3s ease;
-}
-.nav-links a:hover {
-    color: #007bff;
 }
 
 
