@@ -82,6 +82,37 @@ body {
     padding: 1rem;
 }
 
+/* --------contact.html--------- */
+
+.contact .subtitle {
+    text-align: right;
+    padding-bottom: 0.5rem;
+}
+
+.contact .contact-card {
+    background-color: rgb(240, 235, 229);
+}
+
+.contact .contact-form {
+    display: flex;
+    flex-direction: column;
+    margin: 1rem 0;
+}
+
+.contact .form-label {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.contact .form-textarea {
+    margin: 0 0 0.5rem 0;
+}
+
+.contact .form-button {
+    width: 10%;
+    margin-left: auto;
+}
 
 
 

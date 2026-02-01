@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="/assets/css/style.css">
     <link rel="canonical" href="https://westdaiyo.net/contact">
 </head>
-<body>
+<body class="contact">
     <nav class="navbar">
         <div class="container">
             <div class = "nav-container">
@@ -33,28 +33,28 @@
                         <hr>
                         <div class = "contact-grid">
                             <section class = "contact-card">
-                                <p class = "card-test">フォームはダミーです（あなたのメアドを保持したくないのです）<br>実際の問い合わせはメアドorGithubへのプッシュでお願いします</p>
+                                <p class = "card-test">フォームはダミーです（あなたのメアドを保持したくないのです）<br>実際の問い合わせはメアド or Github へのプッシュでお願いします</p>
                                 <form class= "contact-form" action="#" method="POST">
-                                    <label class="form-label">
+                                    <label for="name"  class="form-label">
                                         お名前
-                                        <input class="form-input" type="text" name="name" placeholder= "日本　太郎" autocomplete="name" />
+                                        <input id="name" class="form-input" type="text" name="name" placeholder= "日本　太郎" autocomplete="name" />
                                     </label>
-                                    <label class="form-label">
+                                    <label for="email" class="form-label">
                                         メールアドレス
-                                        <input class="form-input" type="email" name="email" placeholder="exampl.com" autocomplete="email" />
+                                        <input id="email" class="form-input" type="email" name="email" placeholder="exampl.com" autocomplete="email" />
                                     </label>
-                                    <label class="form-label">
+                                    <label for="message" class="form-label">
                                         内容
-                                        <textarea class = "form-textarea" name="message" rows="6" placeholder="ご用件を入力してください"></textarea>
+                                        <textarea id="message" class = "form-textarea" name="message" rows="3" placeholder="ご用件を入力してください"></textarea>
                                     </label>
-                                    <button class="form-button" type="submit" disabled>
+                                    <button class="form-button" type="submit">
                                         送信
                                     </button>
                                 </form>
                             </section>
 
                             <p>GitHub：<span><a href="https://github.com/OnoHibiki">こちら</a></span></p>
-                            <p>mail：<span><a id="email-link" href="#" aria-label="メールアドレス"></a></span></p>
+                            <p id="my_email" aria-label="メールアドレス"></p>
 
                         </div>
                         
@@ -71,15 +71,27 @@
         </div>
     </footer>
 
+    <!-- 画像ランダム切り替え -->
     <script src="assets/js/index.js"></script>
+
+    <!-- メアド　クローラ対策 -->
     <script>
         const user = "you.only.live.once0427";
         const domain = "gmail.com";
         const email = `${user}@${domain}`;
 
-        const a = document.getElementById("email-link");
-        a.textContent = email;
-        a.href = `mailto:${email}`;
+        const p = document.getElementById("my_email");
+        p.textContent = `Email : ${email}`;
     </script>
+
+    <!-- 送信させない努力 -->
+     <script>
+        const form = document.querySelector(".contact-form");
+
+        form.addEventListener("submit", function(e) {
+            e.preventDefault();
+            alert("あなたのデータを保持したくないので、送信をキャンセルします。")
+        });
+     </script>
 </body>
 </html>
