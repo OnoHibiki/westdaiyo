@@ -135,7 +135,6 @@ body {
 .contact .inbox {
     display: flex;
     flex-direction: column;
-    gap: ;
 }
 
 

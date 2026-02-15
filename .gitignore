@@ -1,4 +1,9 @@
-.vscode/
 node_modules/
-assets/images/
+dist/
+.env
+.env.local
+.env.*.local
 .DS_Store
+.vscode/
+npm-debug.log*
+assets/images/
