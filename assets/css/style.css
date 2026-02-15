@@ -84,7 +84,7 @@ body {
     padding-left: 1rem;
 }
 
-/* --------contact.html--------- */
+/* --------contact--------- */
 
 .contact h1 {
     margin: 0;
@@ -137,7 +137,12 @@ body {
     flex-direction: column;
 }
 
+/* ---------portfolio---------- */
 
+.portfolio .frontend-list {
+    list-style: none;
+    padding-left: 0.5rem;
+}
 
 /* ---------fotter---------- */
 .footer {
