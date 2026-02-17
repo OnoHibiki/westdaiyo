@@ -1,3 +1,12 @@
+import { Header } from "../components/Header/Header";
+
 export function Home() {
-    return <p>テスト</p>;
+    return(
+        <>
+            <Header />
+            <section id ="top">{/*Hero予定*/}
+                <h1>テスト</h1>
+            </section>
+        </>
+    );
 } 
