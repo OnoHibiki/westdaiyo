@@ -1,0 +1,41 @@
+.hero {
+    position: relative;
+    height: 80vh; /*重要！Heroを画面いっぱいの高さにするため/*
+
+    /*開発用の仮背景画像*/
+    background-image: url("https://picsum.photos/1600/900");
+    background-size: cover;
+    background-position: center;
+
+    display: flex;/*画像内コンテンツ用のflex*/
+    align-items: center;
+    justify-content: center;
+}
+
+.overlay { /*画像にカバーをかける感じ（後で削除するかも）*/
+    position: absolute;
+    inset: 0; /*全方向、端まで広げる*/
+    background: rgba(0, 0, 0, 0.55);
+}
+
+.content {
+    position: relative;
+    z-index: 1;/*画像内文字を最前列に*/
+    text-align: center;
+    color:#fff ;
+    padding: 0 24px;
+}
+
+.content h1 {
+    margin: 0;
+    font-size: 3rem; /*1rem = 16px*/
+    letter-spacing: 0.04em;
+    font-weight: 500;
+}
+
+.content p {
+    margin: 12px 0 0; /*h1との距離空け*/
+    font-size: 1rem;
+    line-height: 1.8;
+    opacity: 0.9;
+}

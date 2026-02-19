@@ -8,9 +8,6 @@ export function Hero () {
             <div className={styles.content}>
                 <h1>ゴリラも驚き</h1>
                 <p>先祖返りをしてしまいそうなほどの安らぎ空間</p>
-                <a href="#reservation" className={styles.button}>
-                    Web予約
-                </a>
             </div>
         </section>
     );
