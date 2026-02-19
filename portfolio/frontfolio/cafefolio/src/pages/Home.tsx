@@ -1,12 +1,18 @@
+//CSS
+import styles from "./Home.module.css"; 
+
+//components
 import { Header } from "../components/Header/Header";
 
 export function Home() {
     return(
         <>
             <Header />
-            <section id ="top">{/*Hero予定*/}
-                <h1>テスト</h1>
-            </section>
+            <main className={styles.main}>
+                <section id ="top">{/*Hero予定*/}
+                    <h1>テスト</h1>
+                </section>
+            </main>
         </>
     );
 } 
