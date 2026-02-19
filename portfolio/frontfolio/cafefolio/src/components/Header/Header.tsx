@@ -5,7 +5,6 @@ export function Header() {
         <header className={styles.header}>
             <div className={styles.inner}>
                 <a href="#top" className={styles.shopName}>喫茶Ono</a>
-
                 <nav className={styles.nav}>
                     <ul className={styles.list}>
                         <li><a href="#about">お店について</a></li>
