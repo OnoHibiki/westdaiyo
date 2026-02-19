@@ -1,7 +1,7 @@
 //CSS
 import styles from "./Home.module.css"; 
 
-//components
+//Components
 import { Header } from "../components/Header/Header";
 
 export function Home() {

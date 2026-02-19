@@ -1,0 +1,7 @@
+.main { /*HeaderとHeroが重なってしまうのを防ぐ*/
+    padding-top: 80px;
+}
+
+section { /*アンカーリンク用CSS*/
+    scroll-margin-top: 80px;
+}
