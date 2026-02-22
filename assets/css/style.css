@@ -192,9 +192,12 @@ body {
         height: 280px;
         width: 100%;
         background-color: #f1dfdf;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
     .profile-img {
-        width: 100%;
+        width: auto;
         height: 100%;
         object-fit: contain;
     }
