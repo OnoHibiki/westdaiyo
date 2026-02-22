@@ -157,14 +157,14 @@ body {
 @media (max-width:768px) {
     .nav-container {
         flex-direction: column;
-        align-items: flex-start;
+        align-items: center;
         gap: 12px;
         text-align: center;
     }
     
     .nav-links{
         flex-wrap: wrap;
-        gap: 12px;
+        gap: 0 32px;
     }
 
     .nav-links li {
