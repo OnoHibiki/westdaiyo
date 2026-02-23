@@ -1,5 +1,10 @@
-/* グローバルCSS的な */
+/* カスタムCSS */
+:root {
+  --container-width:1300px;
+  --header-height:50px;
+}
 
+/* グローバルCSS的な */
 *,
 *::before,
 *::after { /*基本*/
@@ -7,6 +12,7 @@
 }
 
 html,/*念のため*/
+main,
 body {
   margin: 0;
   padding: 0;
@@ -14,7 +20,9 @@ body {
 
 body {/*フォント最低限*/
   font-family: system-ui, sans-serif;
+  background-color: #ffd99c;
 }
+
 
 ul { /*ulの点はいらない*/
   list-style: none;

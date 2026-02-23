@@ -1,5 +1,5 @@
 .main { /*HeaderとHeroが重なってしまうのを防ぐ*/
-    padding-top: 80px;
+    padding-top: var(--header-height);
 }
 
 section { /*アンカーリンク用CSS*/
