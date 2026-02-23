@@ -1,14 +1,16 @@
 .hero {
     width: 100%;
+    
 }
 
 .inner {
+    width: 100%;
     max-width: var(--container-width);
     height: 60vh; /*画像の高さ*/
     margin: 0 auto;
     position: relative;
     overflow: hidden;
-    
+
     display:flex;
     align-items: center;
 }
@@ -54,4 +56,27 @@
     letter-spacing: 0.3em;
     font-weight: 500;
     padding-right: 1.5em;
+}
+
+/* Mobile */
+@media (max-width:768px) {
+
+    .inner {
+        max-width: 100%;
+    }
+
+    .content {
+        flex-direction: column;
+        justify-content: center;
+        gap: 12px;
+        text-align: center;
+    }
+
+    .left,
+    .right {
+        padding-left:0 ;
+        padding-right:0 ;
+        font-size: 1.4rem;
+        letter-spacing: 0.15rem;
+    }
 }
