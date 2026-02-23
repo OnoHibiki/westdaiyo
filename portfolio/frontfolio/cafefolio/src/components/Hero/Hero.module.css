@@ -8,6 +8,9 @@
     margin: 0 auto;
     position: relative;
     overflow: hidden;
+    
+    display:flex;
+    align-items: center;
 }
 
 .heroImage {
@@ -15,7 +18,9 @@
     inset: 0;
     width: 100%;
     height: 100%;
+    
     object-fit: cover;
+    object-position: center 30%;
 }
 
 .overlay { /*画像にカバーをかける感じ（後で削除するかも）*/
@@ -27,21 +32,26 @@
 .content {
     position: relative;
     z-index: 1;/*画像内文字を最前列に*/
-    text-align: center;
     color:#fff ;
     padding: 0 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
 }
 
-.content h1 {
+.left {
     margin: 0;
-    font-size: 3rem; /*1rem = 16px*/
-    letter-spacing: 0.04em;
+    font-size: 2rem; /*1rem = 16px*/
+    letter-spacing: 0.3em;
     font-weight: 500;
+    padding-left: 1.5em;
 }
 
-.content p {
-    margin: 12px 0 0; /*h1との距離空け*/
-    font-size: 1rem;
-    line-height: 1.8;
-    opacity: 0.9;
+.right {
+    margin: 0;
+    font-size: 2rem; /*1rem = 16px*/
+    letter-spacing: 0.3em;
+    font-weight: 500;
+    padding-right: 1.5em;
 }

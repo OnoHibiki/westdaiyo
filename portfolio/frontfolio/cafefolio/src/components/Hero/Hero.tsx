@@ -8,8 +8,8 @@ export function Hero () {
                 <img src={heroImage} alt="コーヒー" className={styles.heroImage}  />
                 <div className={styles.overlay}></div> {/*背景画像透過用*/}
                 <div className={styles.content}>
-                    <h1>安らぎのカフェ</h1>
-                    <p>喧騒とは無縁の時間</p>
+                    <h1 className={styles.left}>安らぎのカフェ</h1>
+                    <h1 className={styles.right}>喧騒とは無縁</h1>
                 </div>
             </div>
         </section>
