@@ -1,6 +1,12 @@
+.inner {
+    max-width: 1200px;
+    margin: 0 auto;
+
+}
+
 .hero {
     position: relative;
-    height: 70vh; /*重要！Heroを画面いっぱいの高さにするため*/
+    height: 60vh; /*重要！Heroを画面いっぱいの高さにするため*/
     display: flex;/*画像内コンテンツ用のflex*/
     align-items: center;
     justify-content: center;

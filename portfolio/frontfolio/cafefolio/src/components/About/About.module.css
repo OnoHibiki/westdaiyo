@@ -1,0 +1,27 @@
+.media { /*横並び*/
+    width: 1100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+    padding-top: 100px;
+}
+
+.image {
+    width: 25%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 5%;
+}
+
+.title {
+    text-align: center;
+}
+
+.lead {
+    text-align: center;
+}
+
+.description {
+    text-align: center;
+}
