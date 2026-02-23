@@ -1,15 +1,18 @@
 .hero {
     position: relative;
-    height: 80vh; /*重要！Heroを画面いっぱいの高さにするため/*
-
-    /*開発用の仮背景画像*/
-    background-image: url("https://picsum.photos/1600/900");
-    background-size: cover;
-    background-position: center;
-
+    height: 70vh; /*重要！Heroを画面いっぱいの高さにするため*/
     display: flex;/*画像内コンテンツ用のflex*/
     align-items: center;
     justify-content: center;
+    overflow: hidden;
+}
+
+.heroImage {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 .overlay { /*画像にカバーをかける感じ（後で削除するかも）*/
