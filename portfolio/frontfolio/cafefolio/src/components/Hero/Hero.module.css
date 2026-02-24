@@ -1,16 +1,13 @@
-.hero {
+.hero{
     width: 100%;
-    
 }
 
 .inner {
-    width: 100%;
-    max-width: var(--container-width);
+    width: min(90%,var(--container-width));
     height: 60vh; /*画像の高さ*/
     margin: 0 auto;
     position: relative;
     overflow: hidden;
-
     display:flex;
     align-items: center;
 }

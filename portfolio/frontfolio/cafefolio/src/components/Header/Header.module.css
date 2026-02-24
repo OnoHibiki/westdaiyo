@@ -6,7 +6,7 @@
     
 .inner {
     background-color: rgb(255, 255, 255);
-    max-width: var(--container-width);    
+    width: min(90%,var(--container-width));  
     height: var(--header-height);
     margin: 0 auto ;
     display: flex ;

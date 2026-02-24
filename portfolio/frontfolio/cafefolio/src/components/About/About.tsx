@@ -3,7 +3,7 @@ import ownerImg from "../../assets/images/owner.JPG";
 
 export function About() {
     return(
-        <section id="about" className={styles.about}>
+        <section  className={styles.about} id="about">
             <div className={styles.inner}>
                 
                 {/* 左：画像 */}

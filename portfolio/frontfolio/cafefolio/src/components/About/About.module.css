@@ -1,13 +1,15 @@
 .about {
-    width: 100vh;
+    width: 100%;
 }
 
 .media { /*横並び*/
+    max-width: var(--container-width);
+    background-color: white;
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 16px;
-    padding-top: 100px;
+    padding-top: 50px;
 }
 
 .image {
