@@ -3,30 +3,39 @@
 }
 
 .media { /*横並び*/
-    max-width: var(--container-width);
+    width: min(90%,var(--container-width));
+    margin: 0 auto;
     background-color: white;
     display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 16px;
+    justify-content: space-between;
+    gap: 1rem;
     padding-top: 50px;
+    /* height: clamp(22rem, 35vh, 28rem); */
 }
 
 .image {
-    width: 25%;
-    height: 180px;
+    aspect-ratio: 1/1;
+    width: 40%;
     object-fit: cover;
     border-radius: 5%;
 }
 
+.text {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 .title {
-    text-align: center;
+    
 }
 
 .lead {
-    text-align: center;
+    
 }
 
 .description {
-    text-align: center;
+    
 }
