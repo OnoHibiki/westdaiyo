@@ -8,7 +8,6 @@ export function Header() {
                 <nav className={styles.nav}>
                     <ul className={styles.list}>
                         <li><a href="#about">お店について</a></li>
-                        <li><a href="#reservation">Web予約</a></li>
                         <li><a href="#access">Map</a></li>
                         <li><a href="#contact">問い合わせ</a></li>
                     </ul>
