@@ -1,7 +1,7 @@
 /* カスタムCSS */
 :root {
   --container-width:1300px;
-  --header-height:50px;
+  --header-height:80px;
 }
 
 /* グローバルCSS的な */
