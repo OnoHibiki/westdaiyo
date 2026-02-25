@@ -6,6 +6,9 @@ export function About() {
         <section  className={styles.about} id="about">
             <div className={styles.inner}>
                 
+                <h1 className={styles.title}>
+                    私が運営しています。
+                </h1>
                 {/* 左：画像 */}
                 <div className={styles.media}>
                     <img 
@@ -15,15 +18,11 @@ export function About() {
                     />
                 {/* 右：テキスト */}
                     <div className={styles.text}>
-                        <h2 className={styles.title}>What?</h2>
-                        <p className={styles.lead}>
-                            喫茶Ono 店主・尾野 響
-                        </p>
+                        <h2 className={styles.my}>喫茶Ono 店主・尾野 響</h2>
                         <p className={styles.description}>
-                            コーヒーの香りと共に、<br />
-                            非日常に少しの余白を。<br />
-                            Since1963の時代の香りと共に、<br />
-                            あなたを、恐怖へ誘う・・・
+                            コーヒーの香りと共に、非日常に少しの余白を。<br />
+                            Since1963の時代の香りと共に、あなたを、恐怖へ誘う・・・<br />
+                            コーヒ初心者の意地、見せたるで。
                         </p>
                     </div>
 

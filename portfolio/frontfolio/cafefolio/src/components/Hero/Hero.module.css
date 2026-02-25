@@ -1,6 +1,3 @@
-.hero{
-    width: 100%;
-}
 
 .inner {
     width: min(90%,var(--container-width));
