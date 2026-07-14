@@ -31,26 +31,25 @@
 /* ----------------- */
 
 .greet {
-  width: 90%;
-  margin: 10rem auto; 
+  width: 80%;
+  margin: 5rem auto; 
   display: flex;
-  justify-content:space-around ;
-  border: 2px solid ;
-  background-color: antiquewhite;
+  justify-content: center;
+  gap: 3rem;
+  background-color: aliceblue;
 }
 
 .greetImg {
-  width: 30%;
+  width: 220px;
+  height: auto;
   border-radius: 50%;
 }
 
 .greetText {
-  width: 30%;
+  width: 40%;
   padding: 1rem ;
-  background-color: red;
 }
 
 .greetText p {
-  padding-top:  10rem;
-  text-align: right;
+  padding-top: 1rem;
 }
