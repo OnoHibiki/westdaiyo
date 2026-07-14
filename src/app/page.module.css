@@ -35,7 +35,7 @@
   margin: 5rem auto; 
   display: flex;
   justify-content: center;
-  gap: 3rem;
+  gap: 10rem;
   background-color: aliceblue;
 }
 
@@ -46,7 +46,7 @@
 }
 
 .greetText {
-  width: 40%;
+  width: 20%;
   padding: 1rem ;
 }
 
