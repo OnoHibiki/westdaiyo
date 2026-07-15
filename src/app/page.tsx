@@ -1,4 +1,5 @@
 import styles from "./page.module.css";
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -14,22 +15,17 @@ export default function Home() {
         <img className={styles.greetImg} src="/images/greet.png" alt="尾野 響" />
         <div className={styles.greetText}>
           <h1>尾野 響</h1>
-          <p>大学卒業後、バンド活動を６年くらいやったよ。
+          <p>大学卒業後、バンド活動を６年くらいやってた。
           <br />今はシステムエンジニアを志しているよ。</p>
-          <a href="">詳細はこちら</a>
+          <Link href="">詳細はこちら</Link>
         </div>
       </div>
 
       <div className={styles.works}>
-        <div className={`${styles.worksCard} ${styles.frontCard}`}>
-          FrontEnd
-        </div>
-        <div className={`${styles.worksCard} ${styles.backCard}`}>
-          BackEnd
-        </div>
-        <div className={`${styles.worksCard} ${styles.infraCard}`}>
-          Infrastructure
-        </div>
+        <h1>ポートフォリオはこちら</h1>
+        <Link className={styles.worksCard} href="">
+          <p>Works</p>
+        </Link>
       </div>
     </main>
   );
