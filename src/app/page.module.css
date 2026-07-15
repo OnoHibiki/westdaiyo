@@ -28,14 +28,13 @@
 }
 
 /* ----------------- */
-
 .greet {
-  width: 80%;
+  width: 70%;
   margin: 5rem auto; 
   display: flex;
   justify-content: center;
   gap: 10rem;
-  background-color: aliceblue;
+  background-color: beige;
 }
 
 .greetImg {
@@ -89,3 +88,22 @@
   transform: translateY(-5px);
   color:red;
 }
+
+/* ----------------- */
+.footer {
+  text-align: right;
+  padding: 1rem 2rem 0.5rem 0;
+  background-color: cornflowerblue;
+}
+.footer h2 {
+  padding-bottom: 5px;
+}
+.footerLinks {
+  display: flex;
+  flex-direction: column;
+  padding: 5px;
+}
+.footerLinks a {
+  padding: 5px;
+}
+
