@@ -27,6 +27,23 @@ export default function Home() {
           <p>Works</p>
         </Link>
       </div>
+
+      <footer className={styles.footer}> 
+        <h2>Contact</h2>
+        <div className={styles.footerLinks}>
+          <a 
+            href="https://github.com/Onohibiki"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            GitHub
+          </a>
+          <a href="mailto:onohibiki0427@gmail.com">
+            Email
+          </a>
+        </div>
+        <p>©️ 2026 Hibiki Ono</p>
+      </footer>
     </main>
   );
 }
