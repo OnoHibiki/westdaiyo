@@ -92,8 +92,8 @@
 /* ----------------- */
 .footer {
   text-align: right;
-  padding: 1rem 2rem 0.5rem 0;
-  background-color: cornflowerblue;
+  padding: 0.5rem 2rem 0.5rem 0;
+  background-color: rgb(187, 246, 187);
 }
 .footer h2 {
   padding-bottom: 5px;
@@ -101,10 +101,16 @@
 .footerLinks {
   display: flex;
   flex-direction: column;
-  padding: 5px;
+  align-items: flex-end;
 }
 .footerLinks a {
-  padding: 5px;
+  padding: 3px;
+  display: inline-block;
+  color: blue;
+  transition: 0.1s;
+}
+.footer a:hover {
+  transform: translateY(-2px);
 }
 
 
