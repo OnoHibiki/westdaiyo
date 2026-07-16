@@ -24,7 +24,7 @@ export default function Home() {
 
       <div className={styles.works}>
         <h1>ポートフォリオはこちら</h1>
-        <Link className={styles.worksCard} href="">
+        <Link className={styles.worksCard} href="/works">
           <p>Works</p>
         </Link>
       </div>
