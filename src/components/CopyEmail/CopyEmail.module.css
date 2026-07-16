@@ -1,0 +1,24 @@
+.copyButton {
+    padding: 3px;
+    border: none;
+    background: none;
+    color: blue;
+    font: inherit;
+    cursor: pointer;
+    transition: transform 0.1s;
+}
+.copyButton:hover {
+    transform: translateY(-2px);
+}
+.toast {
+    position: fixed;
+    right: 2rem;
+    bottom: 2rem;
+    z-index: 1000;
+    padding: 2px;
+    border-radius: 16px;
+    background-color: black;
+    color: white;
+    font-weight: bolder;
+    opacity: 0.6;
+}

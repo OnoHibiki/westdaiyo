@@ -1,5 +1,6 @@
 import styles from "./page.module.css";
 import Link from "next/link";
+import CopyEmail from "@/components/CopyEmail/CopyEmail";
 
 export default function Home() {
   return (
@@ -38,9 +39,7 @@ export default function Home() {
           >
             GitHub
           </a>
-          <a href="mailto:onohibiki0427@gmail.com">
-            Email
-          </a>
+          <CopyEmail></CopyEmail>
         </div>
         <p>©️ 2026 Hibiki Ono</p>
       </footer>
