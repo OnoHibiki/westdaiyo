@@ -15,6 +15,18 @@
 .worksGreetText {
     margin: auto 0;
 }
+/* -------------- */
+.top {
+    display: block;
+    width: fit-content;
+    margin: 24px auto;
+    color: blue;
+    transition: 0.1s;
+}
+.top:hover {
+    transform: scale(1.2);
+}
+
 
 /* -------------- */
 .workCards {
