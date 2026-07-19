@@ -33,5 +33,6 @@ jobs:
           password: ${{ secrets.FTP_PASSWORD }}
           protocol: ftps
           port: 21
+          timeout: 120000
           local-dir: ./out/
           server-dir: /westdaiyo.net/public_html/
