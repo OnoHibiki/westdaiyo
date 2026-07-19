@@ -1,4 +1,5 @@
 import styles from "./page.module.css";
+import Link from "next/link";
 
 export default function WorkPage() {
     return (
@@ -10,6 +11,9 @@ export default function WorkPage() {
                     よろしゅうお願いします
                 </p>
             </div>
+            <Link className={styles.top} href="../">
+                TOPへ戻る
+            </Link>
             <div className={styles.workCards}>
                 <div className={styles.frontCard}>
                     <h2>FrontEnd</h2>
