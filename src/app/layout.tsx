@@ -14,8 +14,8 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: { 
-    default: "Hire Me!",
-    template: "%s | Hire Me!",
+    default: "Hibiki_Ono",
+    template: "%s | Hibiki_Ono",
   },
   description: "ここに居ますよ！意外な人材が！",
 };
