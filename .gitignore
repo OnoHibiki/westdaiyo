@@ -36,6 +36,9 @@ yarn-error.log*
 # vercel
 .vercel
 
+# SFTP
+.vscode/sftp.json
+
 # typescript
 *.tsbuildinfo
 next-env.d.ts
