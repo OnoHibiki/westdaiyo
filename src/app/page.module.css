@@ -1,0 +1,26 @@
+.main {
+  min-height: 100vh;
+}
+
+.hero {
+  position: relative;
+  width: 100%;
+  height: 90vh;
+  background-color: cadetblue;
+  overflow: hidden;
+}
+
+.heroImage {
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translate(-50%);
+  width: 350px;
+  height: auto;
+  display: block;
+}
+
+.footer {
+  height: 10vh;
+  background-color: beige;
+}
