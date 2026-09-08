@@ -17,7 +17,7 @@ export const metadata: Metadata = {
     default: "Hibiki_Ono",
     template: "%s | Hibiki_Ono",
   },
-  description: "ここに居ますよ！意外な人材が！",
+  description: "こんにちは",
 };
 
 export default function RootLayout({
