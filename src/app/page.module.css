@@ -96,6 +96,19 @@
   border-radius: 20px;
 }
 
+/* コンタクトモーダル */
+.contactModal {
+  position: relative;
+
+  width: 50%;
+  max-width: 600px;
+
+  padding: 3rem;
+
+  background-color: white;
+  border-radius: 20px;
+}
+
 /* footer */
 
 .footer {
