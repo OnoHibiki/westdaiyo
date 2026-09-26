@@ -5,7 +5,7 @@
 .hero {
   position: relative;
   width: 100%;
-  height: 90vh;
+  height: 95vh;
   background-color: cadetblue;
   overflow: hidden;
 }
@@ -109,9 +109,51 @@
   border-radius: 20px;
 }
 
+.contactModal h2 {
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.contactModal form {
+  display: flex;
+  flex-direction: column;
+}
+
+.contactModal form div {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.contactModal label {
+  font-weight: bold;
+  margin: 0
+}
+
+.contactModal input,
+.contactModal textarea {
+  width: 100%;
+  padding-left:0.1rem;
+  font: inherit;
+}
+
+.contactModal textarea {
+  min-height: 100px;
+  resize: vertical;
+}
+
+.contactModal button[type="submit"] {
+  align-self: flex-end;
+  padding: 0.2rem;
+  margin-top: 1rem;
+
+  font: inherit;
+  cursor: pointer;
+}
+
 /* footer */
 
 .footer {
-  height: 10vh;
+  height: 5vh;
   background-color: beige;
 }
