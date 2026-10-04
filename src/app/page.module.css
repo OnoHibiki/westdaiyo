@@ -200,3 +200,95 @@
 .footer a:hover {
   transform: scale(1.2);
 }
+
+
+
+/* ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝ */
+
+@media (max-width: 768px) {
+  .hero {
+    height: 70vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 1rem;
+  }
+
+  .heroImage {
+    position: static;
+    transform: none;
+
+    width: 70%;
+    height:65vh;
+
+    align-self: flex-end;
+  }
+
+  .heroMenu {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 60%;
+    transform: translateX(2rem);
+  }
+
+  .works,
+  .about,
+  .contact {
+    position: static;
+    transform: none;
+  }
+
+  .bubble {
+    padding: 0.5rem 1.5rem;
+    font-size: 1rem;
+  }
+
+  .bubble:hover,
+  .works:hover {
+    transform: none;
+  }
+
+  .aboutModal,
+  .contactModal {
+    width: 90%;
+    max-width: none;
+    padding: 1.5rem;
+    border-radius: 15px;
+  }
+
+  .aboutContent {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .aboutImage {
+    width: 120px;
+    height: auto;
+  }
+
+  .contactModal h2 {
+    margin-bottom: 1rem;
+  }
+
+  .contactModal input,
+  .contactModal textarea {
+    font-size: 1rem;
+  }
+
+  .contactModal textarea {
+    min-height: 80px;
+  }
+
+  .closeButton {
+    top: 0.5rem;
+    right: 0.5rem;
+    font-size: 1.5rem;
+  }
+
+  .footer {
+    height: 20vh;
+  }
+}

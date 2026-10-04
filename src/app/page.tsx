@@ -15,57 +15,57 @@ export default function Home() {
     <main className={styles.main}>
 
       <section className={styles.hero}>
+        <div className={styles.heroMenu}>
+          <button
+            className={`${styles.bubble} ${styles.about}`}
+            onMouseEnter={() => {
+              setTimeout(() => {
+                setHeroImage("/images/About.png");
+              }, 50);
+            }}
+            onMouseLeave={() => {
+              setTimeout(() => {
+                setHeroImage("/images/greet.png");
+              }, 150);
+            }}
+            onClick={() => setIsAboutOpen(true)}
+          >
+            ABOUT
+          </button>
 
-        <button
-          className={`${styles.bubble} ${styles.about}`}
-          onMouseEnter={() => {
-            setTimeout(() => {
-              setHeroImage("/images/About.png");
-            }, 50);
-          }}
-          onMouseLeave={() => {
-            setTimeout(() => {
-              setHeroImage("/images/greet.png");
-            }, 150);
-          }}
-          onClick={() => setIsAboutOpen(true)}
-        >
-          About
-        </button>
+          <button
+            className={`${styles.bubble} ${styles.works}`}
+            onMouseEnter={() => {
+              setTimeout(() => {
+                setHeroImage("/images/Works.png");
+              }, 50);
+            }}
+            onMouseLeave={() => {
+              setTimeout(() => {
+                setHeroImage("/images/greet.png");
+              }, 150);
+            }}
+          >
+            WORKS
+          </button>
 
-        <button
-          className={`${styles.bubble} ${styles.works}`}
-          onMouseEnter={() => {
-            setTimeout(() => {
-              setHeroImage("/images/Works.png");
-            }, 50);
-          }}
-          onMouseLeave={() => {
-            setTimeout(() => {
-              setHeroImage("/images/greet.png");
-            }, 150);
-          }}
-        >
-          Works
-        </button>
-
-        <button
-          className={`${styles.bubble} ${styles.contact}`}
-          onMouseEnter={() => {
-            setTimeout(() => {
-              setHeroImage("/images/CONTACT.png");
-            }, 50);
-          }}
-          onMouseLeave={() => {
-            setTimeout(() => {
-              setHeroImage("/images/greet.png");
-            }, 150);
-          }}
-          onClick={() => setIsContactOpen(true)}
-        >
-          CONTACT
-        </button>
-        
+          <button
+            className={`${styles.bubble} ${styles.contact}`}
+            onMouseEnter={() => {
+              setTimeout(() => {
+                setHeroImage("/images/CONTACT.png");
+              }, 50);
+            }}
+            onMouseLeave={() => {
+              setTimeout(() => {
+                setHeroImage("/images/greet.png");
+              }, 150);
+            }}
+            onClick={() => setIsContactOpen(true)}
+          >
+            CONTACT
+          </button>
+        </div>
         <img 
           className={styles.heroImage}
           src={heroImage}
@@ -141,7 +141,7 @@ export default function Home() {
             </div>
           </div>
         )}
-
+      
       </section>
 
       <footer className={styles.footer}>
