@@ -96,6 +96,16 @@
   border-radius: 20px;
 }
 
+.aboutContent {
+  display: flex;
+  gap: 2rem;
+}
+
+.aboutImage {
+  width: 180px;
+  height: auto;
+}
+
 /* コンタクトモーダル */
 .contactModal {
   position: relative;

@@ -58,9 +58,20 @@ export default function Home() {
                 ×
               </button>
 
-              <h2>自己紹介</h2>
-              <p>尾野 響(Hibiki Ono)</p>
-              <p>ここに自己紹介を書いていきます</p>
+              <h2>ABOUT ME</h2>
+
+              <div className={styles.aboutContent}>
+                <img 
+                  className={styles.aboutImage}
+                  src="/images/greet.png" alt="Hibiki Ono" 
+                />
+      
+                <div className={styles.aboutText}>
+                  <h3>尾野 響(Hibiki Ono)</h3>
+                  <p>Hibiki Ono</p>
+                  <p>ここに自己紹介を書いていきます</p>
+                </div>
+              </div>
             </div>
           </div>
         )}
