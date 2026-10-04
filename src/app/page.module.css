@@ -5,7 +5,7 @@
 .hero {
   position: relative;
   width: 100%;
-  height: 95vh;
+  height: 93vh;
   background-color: cadetblue;
   overflow: hidden;
 }
@@ -15,8 +15,8 @@
   left: 50%;
   bottom: 0;
   transform: translate(-50%);
-  width: 350px;
-  height: auto;
+  width: 500px;
+  height: 500px;
   display: block;
 }
 
@@ -34,22 +34,40 @@
   font-weight: bold;
 
   cursor: pointer;
+
+  transition: transform 0.2s ease;
+}
+
+.bubble:hover {
+  transform: scale(1.5);
+}
+.works:hover {
+  transform: translateX(-50%) scale(1.5);
 }
 
 .works {
   top: 10%;
   left: 50%;
   transform: translateX(-50%);
+
+  padding: 1.5rem 3rem;
+  font-size: 1.2rem;
 }
 
 .about {
   top: 45%;
   left: 15%;
+
+  padding: 1.5rem 3rem;
+  font-size: 1.2rem;
 }
 
 .contact {
   top: 45%;
   right: 15%;
+
+  padding: 1.5rem 3rem;
+  font-size: 1.2rem;
 }
 
 
@@ -164,6 +182,21 @@
 /* footer */
 
 .footer {
-  height: 5vh;
+  height: 7vh;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 3rem;
   background-color: beige;
+}
+
+.footer a {
+  color: blue;
+  display: inline-block;
+  transition: transform 0.2s ease;
+}
+
+.footer a:hover {
+  transform: scale(1.2);
 }

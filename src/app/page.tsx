@@ -18,7 +18,7 @@ export default function Home() {
 
         <button 
           className={`${styles.bubble} ${styles.about}`}
-          onMouseEnter={() => setHeroImage("/images/about.JPG")}
+          onMouseEnter={() => setHeroImage("/images/About.png")}
           onMouseLeave={() => setHeroImage("/images/greet.png")}
           onClick={() => setIsAboutOpen(true)}
         >
@@ -27,7 +27,7 @@ export default function Home() {
 
         <button 
           className={`${styles.bubble} ${styles.works}`}
-          onMouseEnter={() => setHeroImage("/images/works.jpg")}
+          onMouseEnter={() => setHeroImage("/images/Works.png")}
           onMouseLeave={() => setHeroImage("/images/greet.png")}
         >
           Works
@@ -35,7 +35,7 @@ export default function Home() {
 
         <button
           className={`${styles.bubble} ${styles.contact}`}
-          onMouseEnter={() => setHeroImage("/images/contact.JPG")}
+          onMouseEnter={() => setHeroImage("/images/CONTACT.png")}
           onMouseLeave={() => setHeroImage("/images/greet.png")}
           onClick={() => setIsContactOpen(true)}
         >
@@ -122,6 +122,14 @@ export default function Home() {
 
       <footer className={styles.footer}>
         <p>© 2026 Hibiki Ono</p>
+
+        <a
+          href="https://github.com/OnoHibiki"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          GitHub
+        </a>
       </footer>
     </main>
   );
